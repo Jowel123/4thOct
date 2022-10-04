@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    background-color: #f3f3f3;
+    position: relative;
+}
+
+.hero ul {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    background-color: blue;
+}
+
+.hero ul li {
+    height: 100px;
+    background-color: red;
+    list-style: none;
+    flex-basis: 0 0 calc(16.667% - 12px);
+    width: calc(16.667% - 12px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero a {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 576px) {
+    .hero ul {
+        max-width: 100%;
+        background-color: green;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .hero ul li {
+        flex-basis: 0 0 100%;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 576px) {
+    .hero ul {
+        max-width: 552px;
+        background-color: green;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .hero ul li {
+        flex-basis: 0 0 calc(50% - 12px);
+        width: calc(50% - 12px);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero ul {
+        max-width: 744px;
+    }
+
+    .hero ul li {
+        flex-basis: 0 0 calc(33.33% - 12px);
+        width: calc(33.33% - 12px);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .hero ul {
+        max-width: 968px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero ul {
+        max-width: 1140px;
+        background-color: green;
+    }
+
+    .hero ul li {
+        flex-basis: 0 0 calc(16.667% - 12px);
+        width: calc(16.667% - 12px);
+    }
+}
+
+
+@media screen and (min-width: 1400px) {
+    .hero ul {
+        max-width: 1320px;
+        background-color: blue;
+    }
+}
